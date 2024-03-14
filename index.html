@@ -1,0 +1,225 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200;400&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body{
+          /* background-image: linear-gradient(#0E21A0, #4D2DB7, #9D44C0, #EC53B0);
+          color: white; */
+          background-image: linear-gradient( rgba(0, 0, 0, 0.377), rgba(0, 0, 0, 0.5) ), url(img/city.jpg);
+          
+          background-position: 50% 50%;
+          background-size: cover;
+          background-attachment: fixed;
+          color: white;
+        }
+        table{
+            margin: 0 auto;
+            min-width: 80%;
+            height: 100%;
+            border-spacing: 0px 30px;
+            font-family: 'Unbounded', sans-serif;
+            
+        }
+        thead>tr{
+            height: 16%;
+           
+        }
+        tbody>tr{
+            height: 16%;
+           
+        }
+        
+        tfoot{
+            height: 15%;
+            
+        }
+        img{
+          width: 20%;
+          border-radius: 3px;
+          border: 5px solid black;
+        }
+        #btn_1, #btn_2{
+          font-family: 'Unbounded', sans-serif;
+          padding: 0.5% 2%;
+          background-color: white;
+          border: 3px solid black;
+        }
+        input[type=submit]:hover{
+          box-shadow: 0px 19px 45px rgba(191, 0, 255, 0.623);
+        }
+        .custom_input{
+          outline: none;
+          padding: 0.5% 1%;
+          font-family: 'Unbounded', sans-serif;
+          border: 3px solid black;
+          width: 25%;
+          text-align: center;
+
+        }
+        .custom_input:focus{
+          box-shadow: 0px 19px 45px rgba(191, 0, 255, 0.623);
+        }
+        .hat{
+          font-weight: bold;
+        }
+        .hat:hover{
+          color: #9400FF;
+          transition:  2s ease;
+        }
+        .footer{
+          font-weight: bold;
+        }
+        .footer:hover{
+          color: #9400FF;
+          transition:  2s ease;
+          
+          
+        }
+        .results{
+            border: 4px solid white;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th class="hat">Романова Алина Ильинична, группа P3207, номер варианта 1712</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr align="center">
+                <td>
+                    <img src="img/1.png" alt="">
+                </td>
+            </tr>
+            <form method="POST" action="php/script.php" id="main_form">
+                <tr align="center" valign="middle">
+                    <td class="radio_td">
+                        <span for="">Значение X:</span>
+                          
+                            <input class="custom-radio" type="radio" id="x1" name="x" value="-5">
+                            <label for="x1">-5</label>
+                          
+                          
+                            <input class="custom-radio" type="radio" id="x2" name="x" value="-4">
+                            <label for="x2">-4</label>
+                         
+                          
+                            <input class="custom-radio" type="radio" id="x3" name="x" value="-3">
+                            <label for="x3">-3</label>
+                          
+                          
+                            <input class="custom-radio" type="radio" id="x4" name="x" value="2">
+                            <label for="x4">-2</label>
+                          
+                          
+                            <input class="custom-radio" type="radio" id="x5" name="x" value="-1">
+                            <label for="x5">-1</label>
+                          
+                          
+                            <input class="custom-radio" type="radio" id="x6" name="x" value="0">
+                            <label for="x6">0</label>
+                          
+                          
+                            <input class="custom-radio" type="radio" id="x7" name="x" value="1">
+                            <label for="x7">1</label>
+                          
+                          
+                            <input class="custom-radio" type="radio" id="x8" name="x" value="2">
+                            <label for="x8">2</label>
+                          
+                          
+                            <input class="custom-radio" type="radio" id="x9" name="x" value="3">
+                            <label for="x9">3</label>
+                          
+                    </td>
+                </tr>
+                
+                <tr align="center" valign="middle">
+                    <td>
+                        <label for="y">Значение Y:</label>
+                        <input class="custom_input" type="text" name="y" id="y"  maxlength="5" placeholder="От -3 до 5 невключительно">
+                    </td>
+                    
+                </tr>
+                <tr align="center" valign="middle">
+                    <td class="radio_td">
+                        <span for="">Значение R:</span>
+                          
+                            <input class="custom-radio" type="radio" id="r1" name="r" value="1">
+                            <label for="r1">1</label>
+                         
+                          
+                            <input class="custom-radio" type="radio" id="r2" name="r" value="1.5">
+                            <label for="r2">1.5</label>
+                          
+                          
+                            <input class="custom-radio" type="radio" id="r3" name="r" value="2">
+                            <label for="r3">2</label>
+                          
+                          
+                            <input class="custom-radio" type="radio" id="r4" name="r" value="2.5">
+                            <label for="r4">2.5</label>
+                          
+                          
+                            <input class="custom-radio" type="radio" id="r5" name="r" value="3">
+                            <label for="r5">3</label>
+                          
+                    </td>
+                </tr>
+                <tr align="center" valign="middle">
+                    <td>
+                        <input id="btn_1"  type="submit" value="Отправить">
+                    </td>
+                </tr>
+            </form>
+            <form action="php/clear.php" id="clear_form">
+                <tr align="center" valign="middle">
+                    <td>    
+                        <input  id="btn_2" type="submit" name="submit" value="Очистить таблицу">
+    
+                    </td>
+                </tr>
+            </form>
+           
+
+
+            <td valign = "top">   <!-- результаты --> 
+                <table  border="1"  width="100%" class="results">
+                    <thead>
+                        <th >X</th>
+                        <th >Y</th>
+                        <th >R</th>
+                        <th >Результат</th>
+                        <th >Время выполнения</th>
+                        <th >Время выполнения скрипта</th>
+                    </thead>
+                    <tbody id="result_data">
+
+                    </tbody>
+                </table>
+            </td>
+
+
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td class="footer" align="center" valign="middle">
+                    ПИиКТ, СППО, 2023.
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+    <script src="js/script.js"></script>
+</body>
+</html>
